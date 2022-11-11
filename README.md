@@ -2,14 +2,13 @@
 
 Pass an input file defining all words you use (each word on a new line). The script will create a plist mapping all "unique paths" to a word.
 
-For example, if your entire dictionary of words was just "met", "meteor" and "meteors" you would have two shortcuts, a mapping of me -> met and mete -> meteor. 
-
+For example, take the following as your dictionary of all words:
 ``
     met
     meteor
     meteors
 ``
-
+Your output is:
 ``
     me -> met;
     mete -> meteor
