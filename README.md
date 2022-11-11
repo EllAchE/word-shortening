@@ -3,16 +3,13 @@
 Pass an input file defining all words you use (each word on a new line). The script will create a plist mapping all "unique paths" to a word.
 
 For example, take the following as your dictionary of all words:
-``
     met
     meteor
     meteors
-``
-Your output is:
-``
-    me -> met;
+
+Your output is two mappings:
+    me -> met &
     mete -> meteor
-``
 
 I.e. the moment you type a combination of letters that is not a complete word and that follows a unique path you "skip ahead" to where the path is no longer unique.
 
