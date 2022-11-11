@@ -11,7 +11,7 @@ For example, take the following as your dictionary of all words:
 
 Your output is two mappings:
 ```
-    me -> met &
+    me -> met
     mete -> meteor
 ```
 
