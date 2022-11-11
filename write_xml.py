@@ -17,9 +17,10 @@ def writeXml():
         return '		<string>' + val + '</string>'
 
     def constructChunk(pair):
-        return [dictLine, phraseLine, getStringLine(pair[0]), shortcutLine, getStringLine(pair[1]), closingDictLine]
+        # reversed bc of order
+        return [dictLine, phraseLine, getStringLine(pair[1]), shortcutLine, getStringLine(pair[0]), closingDictLine]
 
-    path = 'gfg.xml'
+    path = 'shortcuts.plist'
 
     lines = [row1, row2, row3, row4]
     with open('./mappings.csv') as f:
@@ -36,5 +37,3 @@ def writeXml():
 
     with open(path, 'w') as f:
         f.writelines(lines)
-
-writeXml()
